@@ -20,3 +20,10 @@ jobs:
         with:
           name: cypress-video
           path: cypress/videos
+
+      - name: Guardar capturas si algo falla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-capturas
+          path: cypress/screenshots
