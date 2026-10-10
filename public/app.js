@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btn-guardar").addEventListener("click", guardarProducto);
   cargarProductos();
  
- // if (localStorage.getItem("sesion") === "activa") {
-//document.getElementById("login").classList.add("oculto")
-//document.getElementById("admin").classList.remove("oculto")
-//}
+  if (localStorage.getItem("sesion") === "activa") {
+document.getElementById("login").classList.add("oculto")
+document.getElementById("admin").classList.remove("oculto")
+}
 });
 
 
