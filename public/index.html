@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin de Productos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <section id="login" class="card-login">
+    <h1>Iniciar sesion</h1>
+    <p class="hint">Usuario: <b>admin</b> &nbsp;·&nbsp; Contrasena: <b>1234</b></p>
+    <input id="usuario" placeholder="Usuario">
+    <input id="clave" type="password" placeholder="Contrasena">
+    <button id="btn-login">Entrar</button>
+    <p id="login-msg" class="msg-error"></p>
+  </section>
+
+  <section id="admin" class="oculto">
+    <header class="barra">
+      <h1>Administracion de Productos</h1>
+      <button id="btn-logout" class="btn-sec">Cerrar sesion</button>
+    </header>
+    <div class="contenido">
+      <div class="panel">
+        <h2>Agregar / editar producto</h2>
+        <div class="form">
+          <input id="nombre" placeholder="Nombre del producto">
+          <input id="precio" type="number" placeholder="Precio (Q)">
+          <input id="stock"  type="number" placeholder="Stock">
+          <button id="btn-guardar">Agregar producto</button>
+        </div>
+        <p id="form-msg" class="msg-error"></p>
+      </div>
+      <div class="panel">
+        <h2>Catalogo (<span id="contador-productos">0</span> productos)</h2>
+        <table id="tabla-productos">
+          <thead><tr><th>Nombre</th><th>Precio</th><th>Stock</th><th>Acciones</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>

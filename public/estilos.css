@@ -1,0 +1,27 @@
+:root{--azul:#1f2a44;--verde:#22a06b;--rojo:#d64550;--gris:#6b7280;--borde:#e5e7eb;--fondo:#f4f6f9;}
+*{box-sizing:border-box;}
+body{font-family:system-ui,"Segoe UI",sans-serif;margin:0;background:var(--fondo);color:#1f2937;}
+.oculto{display:none !important;}
+.card-login{max-width:360px;margin:80px auto;background:#fff;padding:32px;border-radius:14px;box-shadow:0 8px 30px rgba(0,0,0,.08);text-align:center;}
+.card-login h1{margin:0 0 6px;color:var(--azul);}
+.hint{color:var(--gris);font-size:13px;margin:0 0 18px;}
+.card-login input{width:100%;padding:12px;margin:7px 0;font-size:15px;border:1px solid var(--borde);border-radius:8px;}
+.card-login button{width:100%;padding:12px;margin-top:10px;font-size:16px;background:var(--azul);color:#fff;border:0;border-radius:8px;cursor:pointer;}
+.barra{display:flex;justify-content:space-between;align-items:center;background:var(--azul);color:#fff;padding:16px 28px;}
+.barra h1{margin:0;font-size:20px;}
+.btn-sec{background:#35406b;color:#fff;border:0;padding:8px 14px;border-radius:8px;cursor:pointer;}
+.contenido{max-width:900px;margin:24px auto;padding:0 20px;display:grid;gap:20px;}
+.panel{background:#fff;border:1px solid var(--borde);border-radius:12px;padding:20px;}
+.panel h2{margin:0 0 14px;font-size:17px;color:var(--azul);}
+.form{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px;}
+.form input{padding:10px;border:1px solid var(--borde);border-radius:8px;font-size:15px;}
+#btn-guardar{background:var(--verde);color:#fff;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;font-weight:600;}
+table{width:100%;border-collapse:collapse;}
+th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--borde);}
+th{font-size:13px;color:var(--gris);text-transform:uppercase;letter-spacing:.03em;}
+.btn-editar,.btn-eliminar{border:0;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+.btn-editar{background:#eef2ff;color:#3949ab;}
+.btn-eliminar{background:#fde8ea;color:var(--rojo);}
+.agotado{background:#fde8ea;color:var(--rojo);padding:2px 8px;border-radius:10px;font-size:12px;font-weight:600;}
+.msg-error{color:var(--rojo);font-size:14px;min-height:18px;margin:10px 0 0;}
+@media(max-width:640px){.form{grid-template-columns:1fr;}}

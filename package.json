@@ -1,0 +1,14 @@
+{
+  "name": "admin-productos",
+  "version": "1.0.0",
+  "description": "Pagina de administracion de productos con pruebas Cypress y CI",
+  "scripts": {
+    "start": "http-server public -p 3000 -c-1 -s",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "http-server": "^14.1.1"
+  }
+}
