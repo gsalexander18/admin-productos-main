@@ -24,14 +24,14 @@ function login() {
   
 localStorage.setItem("sesion", "activa") // recuerda que inicio sesion
 
-  if (u === "admin" && c === "1234") {           // login de demostracion
-    document.getElementById("login").classList.add("oculto");
-    document.getElementById("admin").classList.remove("oculto");
-    msg.textContent = "";
-    render();
-  } else {
-    msg.textContent = "Usuario o contrasena incorrectos.";
-  }
+ if (u === "admin" && c === "1234") {
+localStorage.setItem("sesion", "activa") // solo si la clave es correcta
+document.getElementById("login").classList.add("oculto");
+document.getElementById("admin").classList.remove("oculto");
+msg.textContent = "";
+render();
+} else {
+msg.textContent = "Usuario o contrasena incorrectos.";
 }
 function logout() {
   document.getElementById("admin").classList.add("oculto");
