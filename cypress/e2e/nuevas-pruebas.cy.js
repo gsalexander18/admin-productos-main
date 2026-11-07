@@ -20,7 +20,7 @@ describe("Nuevas pruebas de administracion de productos", () => {
     cy.get("#precio").type("250")
     cy.get("#stock").type("8")
     cy.get("#btn-guardar").click()
-    cy.get(".fila-producto").should("have.length", 5)
+    cy.get(".fila-producto").should("have.length", 6)
     cy.get(".col-nombre").should("contain", "Producto de prueba nuevo")
   })
 
