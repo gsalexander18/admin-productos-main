@@ -21,19 +21,19 @@ function login() {
   const c = document.getElementById("clave").value.trim();
   const msg = document.getElementById("login-msg");
 
-  
-localStorage.setItem("sesion", "activa") // recuerda que inicio sesion
-
  if (u === "admin" && c === "1234") {
-localStorage.setItem("sesion", "activa") // solo si la clave es correcta
-document.getElementById("login").classList.add("oculto");
-document.getElementById("admin").classList.remove("oculto");
-msg.textContent = "";
-render();
+   localStorage.setItem("sesion", "activa") // solo si la clave es correcta
+  document.getElementById("login").classList.add("oculto");
+  document.getElementById("admin").classList.remove("oculto");
+  msg.textContent = "";
+ render();
 } else {
 msg.textContent = "Usuario o contrasena incorrectos.";
 }
+}
+
 function logout() {
+  localStorage.removeItem("sesion");
   document.getElementById("admin").classList.add("oculto");
   document.getElementById("login").classList.remove("oculto");
   document.getElementById("usuario").value = "";
